@@ -1,13 +1,15 @@
-import { Button, TextField, Typography } from "@mui/material";
+import { Button, Divider, TextField, Typography } from "@mui/material";
 import { Home, Downloading, RotateLeft } from "@mui/icons-material";
 import Header from "./components/Header";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
+      <Divider />
       HELLO WORLD🚀🚀🚀
-      <div>
+      <Divider />
+      <>
         <Button
           sx={{ margin: 2 }}
           variant="outlined"
@@ -32,16 +34,18 @@ function App() {
           startIcon={<RotateLeft />}>
           Reset
         </Button>
-      </div>
-      <div>
-        <Typography variant="h1">I am Typography</Typography>
+      </>
+      <Divider />
+      <>
+        <Typography variant="h3">I am Typography</Typography>
         <Typography variant="h2">I am Typography</Typography>
         <Typography variant="h4" component="div">
           I am Typography
         </Typography>
         <Typography variant="body1">I am Typography</Typography>
-      </div>
-      <div>
+      </>
+      <Divider />
+      <div style={{ margin: "15px" }}>
         <TextField variant="filled" label="Name" placeholder="Name"></TextField>
         <TextField
           variant="outlined"
@@ -50,7 +54,7 @@ function App() {
           required></TextField>
         <TextField variant="standard" label="standard"></TextField>
       </div>
-    </div>
+    </>
   );
 }
 
