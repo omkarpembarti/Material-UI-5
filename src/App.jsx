@@ -6,8 +6,7 @@ function App() {
   return (
     <>
       <Header />
-      <Divider />
-      HELLO WORLD🚀🚀🚀
+      HELLO WORLD🚀
       <Divider />
       <>
         <Button
