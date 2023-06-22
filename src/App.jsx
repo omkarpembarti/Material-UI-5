@@ -1,4 +1,10 @@
-import { Button, Divider, TextField, Typography } from "@mui/material";
+import {
+  Button,
+  Container,
+  Divider,
+  TextField,
+  Typography,
+} from "@mui/material";
 import { Home, Downloading, RotateLeft } from "@mui/icons-material";
 import Header from "./components/Header";
 
@@ -36,8 +42,6 @@ function App() {
       </>
       <Divider />
       <>
-        <Typography variant="h3">I am Typography</Typography>
-        <Typography variant="h2">I am Typography</Typography>
         <Typography variant="h4" component="div">
           I am Typography
         </Typography>
@@ -53,6 +57,23 @@ function App() {
           required></TextField>
         <TextField variant="standard" label="standard"></TextField>
       </div>
+      <>
+        <Container maxWidth="xs" sx={{ backgroundColor: "lightblue" }}>
+          <h2>Omkar- This is maxWidth="xs"</h2>
+        </Container>
+        <Container maxWidth="md" sx={{ backgroundColor: "lightblue" }}>
+          <h2>Omkar- This is maxWidth="md"</h2>
+        </Container>
+        <Container maxWidth="lg" sx={{ backgroundColor: "lightblue" }}>
+          <h2>Omkar- This is maxWidth="lg"</h2>
+        </Container>
+        <Container maxWidth="xl" sx={{ backgroundColor: "lightblue" }}>
+          <h2>Omkar- This is maxWidth="xl"</h2>
+        </Container>
+        <Container fixed sx={{ backgroundColor: "lightblue" }}>
+          <h2>Omkar- This is FIXED</h2>
+        </Container>
+      </>
     </>
   );
 }
