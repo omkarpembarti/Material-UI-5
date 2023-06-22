@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   Button,
   Container,
@@ -7,6 +8,7 @@ import {
 } from "@mui/material";
 import { Home, Downloading, RotateLeft } from "@mui/icons-material";
 import Header from "./components/Header";
+import Section from "./components/Section";
 
 function App() {
   return (
@@ -74,6 +76,7 @@ function App() {
           <h2>Omkar- This is FIXED</h2>
         </Container>
       </>
+      <Section></Section>
     </>
   );
 }

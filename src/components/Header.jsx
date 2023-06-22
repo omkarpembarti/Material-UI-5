@@ -10,7 +10,7 @@ const Header = () => {
         <Toolbar>
           <LogoDev sx={{ fontSize: "53px" }} />
           <Typography variant="h5">Community</Typography>
-          <TabComponent sx={{ margin: "auto" }} />
+          <TabComponent />
           <Button
             variant="contained"
             color="success"

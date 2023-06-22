@@ -4,13 +4,13 @@ import { Tab, Tabs } from "@mui/material";
 import { useState } from "react";
 
 const TabComponent = () => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState(0);
   return (
     <>
       <Tabs
         value={value}
         sx={{ margin: "auto" }}
-        textColor="white"
+        textColor="primary"
         indicatorColor="primary"
         onChange={(e, value) => {
           console.log("TABS");
