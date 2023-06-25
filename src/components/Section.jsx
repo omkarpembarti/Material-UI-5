@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Paper, Typography } from "@mui/material";
+import { Container, Paper, Typography } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import {
@@ -16,6 +16,7 @@ const Section = () => {
         .then((data) => setProducts(data));
     }, 3000);
     console.log(products);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

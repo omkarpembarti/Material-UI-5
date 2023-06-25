@@ -10,15 +10,15 @@ const TabComponent = () => {
       <Tabs
         value={value}
         sx={{ margin: "auto" }}
-        textColor="primary"
+        textColor="inherit"
         indicatorColor="primary"
         onChange={(e, value) => {
           console.log("TABS");
           setValue(value);
         }}>
-        <Tab label="Home" />
-        <Tab label="Contact" />
-        <Tab label="Career" />
+        <Tab label="Home" disableTouchRipple />
+        <Tab label="Contact" disableTouchRipple />
+        <Tab label="Career" disableTouchRipple />
       </Tabs>
     </>
   );
