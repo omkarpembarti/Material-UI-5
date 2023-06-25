@@ -10,7 +10,7 @@ const Header = (props) => {
       <AppBar position="static">
         <Toolbar>
           <LogoDev sx={{ fontSize: "53px" }} />
-          <Typography variant="h5">Community</Typography>
+          <Typography variant="h5">Nilam</Typography>
           <TabComponent />
 
           <Button

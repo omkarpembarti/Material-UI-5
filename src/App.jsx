@@ -58,10 +58,10 @@ function App() {
         </>
         <Divider />
         <>
-          <Typography variant="h4" component="div">
-            I am Typography
+          <Typography variant="h1" component="div">
+            I am N
           </Typography>
-          <Typography variant="body1">I am Typography</Typography>
+          <Typography variant="body1">I am M</Typography>
         </>
         <Divider />
         <div style={{ margin: "15px" }}>
@@ -76,6 +76,7 @@ function App() {
             required></TextField>
           <TextField variant="standard" label="standard"></TextField>
         </div>
+        <Section></Section>
         <>
           <Container maxWidth="xs" sx={{ backgroundColor: "lightblue" }}>
             <h2>Omkar- This is maxWidth="xs"</h2>
@@ -93,7 +94,6 @@ function App() {
             <h2>Omkar- This is FIXED</h2>
           </Container>
         </>
-        <Section></Section>
       </ThemeProvider>
     </>
   );

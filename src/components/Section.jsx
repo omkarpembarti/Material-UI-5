@@ -27,7 +27,6 @@ const Section = () => {
           display: "flex",
           flexDirection: "row",
           gap: "5px",
-          backgroundColor: "lightgray",
           flexWrap: "wrap",
           justifyContent: "space-evenly",
         }}>
