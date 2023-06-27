@@ -7,7 +7,9 @@ import TabComponent from "./TabComponent";
 const Header = (props) => {
   return (
     <Fragment>
-      <AppBar position="static">
+      <AppBar
+        position="sticky"
+        sx={{ backgroundColor: `${props.mode ? "" : "#d68c45"}` }}>
         <Toolbar>
           <LogoDev sx={{ fontSize: "53px" }} />
           <Typography variant="h5">Nilam</Typography>
