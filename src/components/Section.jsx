@@ -10,11 +10,10 @@ import { useEffect, useState } from "react";
 const Section = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    setTimeout(() => {
-      fetch("https://fakestoreapi.com/products")
-        .then((response) => response.json())
-        .then((data) => setProducts(data));
-    }, 3000);
+    fetch("https://fakestoreapi.com/products")
+      .then((response) => response.json())
+      .then((data) => setProducts(data));
+
     console.log(products);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
