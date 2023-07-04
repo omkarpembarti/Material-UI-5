@@ -7,10 +7,40 @@ import {
 } from "@mui/material";
 import { Home, Downloading, RotateLeft } from "@mui/icons-material";
 import Section from "../components/Section";
+import { useReducer } from "react";
+import ClassComponent from "../components/ClassComponent";
 
 const HomePage = () => {
+  const initialValue = { click: 0 };
+
+  const increment = (state, action) => {
+    if (action.type == "increment")
+      return { state, ...{ click: state.click + 1 } };
+    if (action.type == "decrement")
+      return { state, ...{ click: state.click - 1 } };
+  };
+  const [state, dispatch] = useReducer(increment, initialValue);
+
   return (
     <div>
+      <ClassComponent></ClassComponent>
+      <Button
+        variant="contained"
+        color="success"
+        onClick={() => {
+          dispatch({ type: "increment" });
+        }}>
+        Increment
+      </Button>
+      <Typography component="span">{state.click}</Typography>
+      <Button
+        variant="contained"
+        color="error"
+        onClick={() => {
+          dispatch({ type: "decrement" });
+        }}>
+        Decrement
+      </Button>
       HELLO WORLD🚀
       <Divider />
       <>
